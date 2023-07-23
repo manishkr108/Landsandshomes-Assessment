@@ -27,4 +27,3 @@ Route::get('/api-get-data',[StoreDetailsController::class,'index']);
 Route::get('api-data/{id}',[StoreDetailsController::class,'show']);
 Route::get('api-data/image/{file}', 'StoreDetailsController@getImage')->name('api.data.image');
 Route::get('/temporary-url/{imagePath}', 'YourController@getTemporaryImageUrl');
-// Route::get('api-data/image/{filename}', 'StoreDetailsController@getImage')->name('api.data.image');
